@@ -14,5 +14,8 @@ Afin de visualiser le site, il faut :
 3. Démarrer une fenêtre de votre navigateur web puis taper localhost/nom du dossier créé.
 4. L'arborescence du repository doit s'afficher.
 5. Sélectionner le dossier php puis le fichier indexfinal.php
-6. Le site web s'affiche, la navigation peut commencer. 
+6. Le site web s'affiche, la navigation peut commencer.
+
+Site Web:
+Le site web est hébergé à l'adresse suivante : https://arcadiajv-studi-77a7baaa6bf8.herokuapp.com/
 
