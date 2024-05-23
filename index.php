@@ -2,7 +2,21 @@
 <?php 
   require_once "../components/header.php"
 ?>
+<?php
+if (getenv('JAWSDB_URL') !== false) {
+  $dbparts = parse_url(getenv('JAWSDB_URL'));
 
+  $hostname = $dbparts['host'];
+  $username = $dbparts['user'];
+  $password = $dbparts['pass'];
+  $database = ltrim($dbparts['path'],'/');
+} else {
+  $username = 'root';
+  $password = '';
+  $database = 'arcadiajv';
+  $hostname = 'localhost';
+}
+?>
 
   <!-- CONTENU -->  
   <div id="carouselIndicators" class="carousel slide">
