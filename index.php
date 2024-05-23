@@ -3,20 +3,19 @@
   require_once "../components/header.php"
 ?>
 <?php
-if (getenv('JAWSDB_URL') !== false) {
-  $dbparts = parse_url(getenv('JAWSDB_URL'));
+include ("config.php);
 
-  $hostname = $dbparts['host'];
-  $username = $dbparts['user'];
-  $password = $dbparts['pass'];
-  $database = ltrim($dbparts['path'],'/');
-} else {
-  $username = 'root';
-  $password = '';
-  $database = 'arcadiajv';
-  $hostname = 'localhost';
-}
+$query = $connect->query("SELECT * FROM animaux");
+$query = $connect->query("SELECT * FROM avis");
+$query = $connect->query("SELECT * FROM habitat");
+$query = $connect->query("SELECT * FROM habitat_image");
+$query = $connect->query("SELECT * FROM race");
+$query = $connect->query("SELECT * FROM rapport_veterinaire");
+$query = $connect->query("SELECT * FROM role");
+$query = $connect->query("SELECT * FROM service");
+$query = $connect->query("SELECT * FROM utilisateur");
 ?>
+
 
   <!-- CONTENU -->  
   <div id="carouselIndicators" class="carousel slide">
