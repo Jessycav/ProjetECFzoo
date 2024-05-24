@@ -17,5 +17,5 @@ Afin de visualiser le site, il faut :
 6. Le site web s'affiche, la navigation peut commencer.
 
 Site Web:
-Le site web est hébergé à l'adresse suivante : https://arcadiajv-studi-77a7baaa6bf8.herokuapp.com/
+Le site web est hébergé à l'adresse suivante : https://vannier.alwaysdata.net/
 
